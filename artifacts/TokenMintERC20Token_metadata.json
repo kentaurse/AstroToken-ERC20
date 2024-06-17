@@ -1,0 +1,396 @@
+{
+	"compiler": {
+		"version": "0.5.0+commit.1d4f565a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"name": "",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "approve",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "totalSupply",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "sender",
+						"type": "address"
+					},
+					{
+						"name": "recipient",
+						"type": "address"
+					},
+					{
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "transferFrom",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "decimals",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"name": "addedValue",
+						"type": "uint256"
+					}
+				],
+				"name": "increaseAllowance",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "burn",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "symbol",
+				"outputs": [
+					{
+						"name": "",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"name": "subtractedValue",
+						"type": "uint256"
+					}
+				],
+				"name": "decreaseAllowance",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "recipient",
+						"type": "address"
+					},
+					{
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "transfer",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"name": "spender",
+						"type": "address"
+					}
+				],
+				"name": "allowance",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"name": "symbol",
+						"type": "string"
+					},
+					{
+						"name": "decimals",
+						"type": "uint8"
+					},
+					{
+						"name": "totalSupply",
+						"type": "uint256"
+					},
+					{
+						"name": "feeReceiver",
+						"type": "address"
+					},
+					{
+						"name": "tokenOwnerAddress",
+						"type": "address"
+					}
+				],
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "Transfer",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "Approval",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"author": "TokenMint (visit https://tokenmint.io)\r ",
+			"details": "Standard ERC20 token with burning and optional functions implemented.\r For full specification of ERC-20 standard see:\r https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md\r",
+			"methods": {
+				"allowance(address,address)": {
+					"details": "See `IERC20.allowance`.\r"
+				},
+				"approve(address,uint256)": {
+					"details": "See `IERC20.approve`.\r      * Requirements:\r      * - `spender` cannot be the zero address.\r"
+				},
+				"balanceOf(address)": {
+					"details": "See `IERC20.balanceOf`.\r"
+				},
+				"burn(uint256)": {
+					"details": "Burns a specific amount of tokens.\r",
+					"params": {
+						"value": "The amount of lowest token units to be burned.\r"
+					}
+				},
+				"constructor": {
+					"details": "Constructor.\r",
+					"params": {
+						"decimals": "number of decimal places of one token unit, 18 is widely used\r",
+						"name": "name of the token\r",
+						"symbol": "symbol of the token, 3-4 chars is recommended\r",
+						"tokenOwnerAddress": "address that gets 100% of token supply\r",
+						"totalSupply": "total supply of tokens in lowest units (depending on decimals)\r"
+					}
+				},
+				"decimals()": {
+					"return": "the number of decimals of the token.\r"
+				},
+				"decreaseAllowance(address,uint256)": {
+					"details": "Atomically decreases the allowance granted to `spender` by the caller.\r      * This is an alternative to `approve` that can be used as a mitigation for\r problems described in `IERC20.approve`.\r      * Emits an `Approval` event indicating the updated allowance.\r      * Requirements:\r      * - `spender` cannot be the zero address.\r - `spender` must have allowance for the caller of at least\r `subtractedValue`.\r"
+				},
+				"increaseAllowance(address,uint256)": {
+					"details": "Atomically increases the allowance granted to `spender` by the caller.\r      * This is an alternative to `approve` that can be used as a mitigation for\r problems described in `IERC20.approve`.\r      * Emits an `Approval` event indicating the updated allowance.\r      * Requirements:\r      * - `spender` cannot be the zero address.\r"
+				},
+				"name()": {
+					"return": "the name of the token.\r"
+				},
+				"symbol()": {
+					"return": "the symbol of the token.\r"
+				},
+				"totalSupply()": {
+					"details": "See `IERC20.totalSupply`.\r"
+				},
+				"transfer(address,uint256)": {
+					"details": "See `IERC20.transfer`.\r      * Requirements:\r      * - `recipient` cannot be the zero address.\r - the caller must have a balance of at least `amount`.\r"
+				},
+				"transferFrom(address,address,uint256)": {
+					"details": "See `IERC20.transferFrom`.\r      * Emits an `Approval` event indicating the updated allowance. This is not\r required by the EIP. See the note at the beginning of `ERC20`;\r      * Requirements:\r - `sender` and `recipient` cannot be the zero address.\r - `sender` must have a balance of at least `value`.\r - the caller must have allowance for `sender`'s tokens of at least\r `amount`.\r"
+				}
+			},
+			"title": "TokenMintERC20Token\r"
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"ContractAuditExample.sol": "TokenMintERC20Token"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"ContractAuditExample.sol": {
+			"keccak256": "0x5c254d1b9b30a712ce20ccc051e09b87a5c97a1e2b01bdecb0ed493c5d81eb79",
+			"urls": [
+				"bzzr://2c7c241116f42c015e3ea8a4bdaf504b636c78bc1d1aa809b87d772098062b98"
+			]
+		}
+	},
+	"version": 1
+}
