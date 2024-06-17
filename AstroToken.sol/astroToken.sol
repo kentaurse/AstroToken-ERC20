@@ -1,14 +1,21 @@
 // SPDX-License-Identifier: GPL-3.0
+//rinkby
 
 pragma solidity ^0.6.7;
 
 interface ERC20 {
+    //Powers The Token
     function totalSupply() external view returns (uint _totalSupply);
     function balanceOf(address _owner) external view returns (uint balance);
     function transfer(address _to, uint _value) external returns (bool success);
+    
+    
+    //Needed to Meet ERC Standard
     function transferFrom(address _from, address _to, uint _value) external returns (bool success);
     function approve(address _spender, uint _value) external returns (bool success);
     function allowance(address _owner, address _spender) external view returns (uint remaining);
+    
+    //Need for front end Interaction
     event Transfer(address indexed _from, address indexed _to, uint _value);
     event Approval(address indexed _owner, address indexed _spender, uint _value);
 
@@ -16,7 +23,7 @@ interface ERC20 {
 
 // this is the basics of creating an ERC20 token
 contract AstroToken is ERC20 {
-    string public constant symbol = "ATK";
+    string public constant symbol = "ASTRO";
     string public constant name = "Astro Token";
     uint8 public constant decimals = 18;
  
@@ -34,7 +41,6 @@ contract AstroToken is ERC20 {
         __balanceOf[msg.sender] = __totalSupply;
     }
 
-    //constant value that does not change/  returns the amount of initial tokens to display
     function totalSupply() public view override returns (uint _totalSupply) {
         _totalSupply = __totalSupply;
     }
